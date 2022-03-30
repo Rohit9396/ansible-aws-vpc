@@ -10,6 +10,7 @@
         name: "{{vpc_name}}"
         cidr_block: "{{vpcCidr}}"
         region: "{{region}}"
+        debug_botocore_endpoint_logs: no
         dns_support: yes
         dns_hostnames: yes
         tenancy: default
