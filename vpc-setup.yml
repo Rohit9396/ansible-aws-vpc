@@ -16,6 +16,6 @@
         debug_botocore_endpoint_logs: yes
         dns_support: yes
         dns_hostnames: yes
-        tenancy: default
+        tenancy: dedicated
         state: "{{state}}"
       register: vpcout
