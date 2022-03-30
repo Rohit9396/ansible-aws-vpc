@@ -10,6 +10,9 @@
         name: "{{vpc_name}}"
         cidr_block: "{{vpcCidr}}"
         region: "{{region}}"
+        tags:
+          module: ec2_vpc_net
+          this: works
         debug_botocore_endpoint_logs: yes
         dns_support: yes
         dns_hostnames: yes
