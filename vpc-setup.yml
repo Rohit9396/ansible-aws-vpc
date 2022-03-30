@@ -1,4 +1,4 @@
-- hosts: localhost
+- hosts: 13.235.8.234
   connection: local
   gather_facts: False
   tasks:
