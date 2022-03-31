@@ -6,7 +6,7 @@
       include_vars: vpc_setup
 
     - name: Create vprofie VPC
-      ec2_vpc_net:
+       ec2_vpc_net:
         name: "{{vpc_name}}"
         cidr_block: "{{vpcCidr}}"
         region: "{{region}}"
@@ -14,6 +14,6 @@
         dns_hostnames: yes
         tenancy: default
         state: "{{state}}"
-      register: vpcout
+       register: vpcout
     - debug:
         var: vpcout
